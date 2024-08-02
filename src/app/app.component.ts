@@ -1,6 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, inject, Signal, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { WorkPlaceComponent } from './components/work-place/work-place/work-place.component';
+import { WorkPlaceComponent } from './components/work-place/work-place.component';
+import { DataService } from './services/data.service';
+import { map, Observable } from 'rxjs';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { IWorkplace } from './interfaces/workplace.interface';
 
 @Component({
   selector: 'app-root',
@@ -9,8 +13,16 @@ import { WorkPlaceComponent } from './components/work-place/work-place/work-plac
     RouterOutlet, WorkPlaceComponent
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.less'
+  styleUrl: './app.component.less',
 })
 export class AppComponent {
   title = 'resume';
+  dataService = inject(DataService);
+
+  data: Signal<IWorkplace[] | undefined> = toSignal(this.dataService?.getData());
+
+  constructor() {
+    console.log(this.data())
+    // this.data().forEach((el: IWorkplace) => console.log(el))
+  }
 }

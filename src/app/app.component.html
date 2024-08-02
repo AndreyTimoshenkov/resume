@@ -1,3 +1,7 @@
-<cv-work-place
-  header="Decartus"
-></cv-work-place>
+@for (workplace of data(); track workplace.company) {
+  <cv-work-place
+    [header]="workplace.company"
+    [start]="workplace.start"
+    [end]="workplace.end"
+  ></cv-work-place>
+  }
