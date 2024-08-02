@@ -2,7 +2,6 @@ import { Component, Input, OnChanges } from '@angular/core';
 import { CardModule } from 'primeng/card';
 import { AvatarModule } from 'primeng/avatar';
 import { TimelineComponent } from '../timeline/timeline.component';
-// import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'cv-work-place',
@@ -12,7 +11,6 @@ import { TimelineComponent } from '../timeline/timeline.component';
   ],
   templateUrl: './work-place.component.html',
   styleUrl: './work-place.component.less',
-  // providers: [HttpClient]
 })
 export class WorkPlaceComponent implements OnChanges{
   @Input() header: string;
@@ -21,6 +19,6 @@ export class WorkPlaceComponent implements OnChanges{
   @Input('description') description: string;
 
   ngOnChanges(): void {
-    console.log(this.startDate, this.endDate)
+    // console.log(this.startDate, this.endDate)
   }
 }

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map, Observable } from 'rxjs';
-import { IWorkplace } from '../interfaces/workplace.interface';
+import { IResumeData, IWorkplace } from '../interfaces/workplace.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -13,7 +13,6 @@ export class DataService {
   private readonly baseUrl: string = 'assets/workplaces.json';
 
   getData(): Observable<IWorkplace[]> {
-    //@ts-ignore
-    return this.http.get<IWorkplace[]>(this.baseUrl).pipe(map(data => data.workplaces));
+    return this.http.get<IResumeData>(this.baseUrl).pipe(map(data => data.workplaces));
   }
 }
