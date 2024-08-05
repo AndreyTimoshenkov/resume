@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnChanges } from '@angular/core';
 import { CardModule } from 'primeng/card';
 import { AvatarModule } from 'primeng/avatar';
 import { TimelineComponent } from '../timeline/timeline.component';
@@ -11,14 +11,17 @@ import { TimelineComponent } from '../timeline/timeline.component';
   ],
   templateUrl: './work-place.component.html',
   styleUrl: './work-place.component.less',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class WorkPlaceComponent implements OnChanges{
-  @Input() header: string;
-  @Input('start') startDate: Date | string;
-  @Input('end') endDate: Date | string;
-  @Input('description') description: string;
+  @Input() company: string;
+  @Input() start: Date;
+  @Input() end: Date;
+  // @Input() currentlyEmployed: boolean;
+  @Input() description: string;
+  @Input() position: string;
 
   ngOnChanges(): void {
-    // console.log(this.startDate, this.endDate)
+    // console.log(this.currentlyEmployed)
   }
 }

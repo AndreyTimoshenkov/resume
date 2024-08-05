@@ -1,17 +1,19 @@
 {"workplaces": [
   { "company": "Decartus",
-    "position" : "Младший Ангуляр Разработчик",
+    "position" : "Junior Ангуляр Разработчик",
     "start": "2024, 3",
-    "end": "",
-    "responsibilities" : "Создание с нуля UI компонентов для использования другими участниками проекта; Доработка существующего функционала; Улучшение и рефакторинг кода коллег; Помощь стажёрам.",
+    "end": "0",
+    "currentlyEmployed" : "true",
+    "responsibilities" : "Lorem ipsum odor amet, consectetuer adipiscing elit. Massa luctus interdum maximus inceptos; ipsum pulvinar vulputate. Mi sollicitudin pharetra sapien ac in odio iaculis. Imperdiet nec nulla erat dui elementum. Tempus libero eleifend pretium, sociosqu a est. Sagittis duis dictumst lobortis justo posuere sodales vitae ultricies.",
     "stack" : "Angular 16+, RxJs 6.5+, Angular Material 16+"
   },
   {
     "company": "Lanit Tercom",
-    "position" : "Стажёр Ангуляр Разработчик",
+    "position" : "Ангуляр Разработчик (cтажёр)",
     "start": "2023, 9",
     "end": "2024, 1",
-    "responsibilities" : "Над проектом работали 8 фронтенд разработчиков + 2 ментора, а также команда тестирования, руководитель проекта и дизайнер. В рамках проекта мне довелось как разрабатывать компоненты с нуля (выведение списка соискателей, просмотр и редактирование профиля), так и дописывать созданный коллегами функционал (guards, маршрутизация в зависимости от роли юзера, HTTP interceptors). Работа велась с mobile-first дизайном и адаптивной вёрсткой (хедер и футер доступны в десктопной и мобильной версии приложения соответственно).",
+    "currentlyEmployed" : "false",
+    "responsibilities" : "Lorem ipsum odor amet, consectetuer adipiscing elit. Massa luctus interdum maximus inceptos; ipsum pulvinar vulputate. Mi sollicitudin pharetra sapien ac in odio iaculis. Imperdiet nec nulla erat dui elementum. Tempus libero eleifend pretium, sociosqu a est. Sagittis duis dictumst lobortis justo posuere sodales vitae ultricies.",
     "stack" : "Angular 16+, RxJs 6.5+, Angular Material 16+"
   }
 ]}

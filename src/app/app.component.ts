@@ -1,8 +1,7 @@
-import { Component, inject, Signal, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, Signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { WorkPlaceComponent } from './components/work-place/work-place.component';
 import { DataService } from './services/data.service';
-import { map, Observable } from 'rxjs';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { IWorkplace } from './interfaces/workplace.interface';
 import { NgStyle } from '@angular/common';
@@ -15,15 +14,15 @@ import { NgStyle } from '@angular/common';
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.less',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+
 })
 export class AppComponent {
-  title = 'resume';
   dataService = inject(DataService);
-
   data: Signal<IWorkplace[] | undefined> = toSignal(this.dataService?.getData());
+  // totalExperience: Signal<number | undefined> = computed(() => this.data()?.forEach(el => el.))
 
   constructor() {
-    console.log(this.data())
-    // this.data().forEach((el: IWorkplace) => console.log(el))
+    // this.data()?.forEach((el: IWorkplace) => console.log(el))
   }
 }
