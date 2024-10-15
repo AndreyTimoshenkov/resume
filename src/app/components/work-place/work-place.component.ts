@@ -15,13 +15,10 @@ import { TimelineComponent } from '../timeline/timeline.component';
 })
 export class WorkPlaceComponent implements OnChanges{
   @Input() company: string;
-  @Input() start: Date;
-  @Input() end: Date;
-  // @Input() currentlyEmployed: boolean;
+  @Input() start: number;
+  @Input() end: number | undefined;
   @Input() description: string;
   @Input() position: string;
 
-  ngOnChanges(): void {
-    // console.log(this.currentlyEmployed)
-  }
+  ngOnChanges(): void {}
 }

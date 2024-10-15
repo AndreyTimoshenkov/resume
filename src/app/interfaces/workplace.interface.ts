@@ -1,8 +1,8 @@
 export interface IWorkplace {
   "company": string,
   "position" : string,
-  "start": Date,
-  "end": Date,
+  "start": number,
+  "end"?: number,
   "currentlyEmployed" : boolean,
   "responsibilities" : string,
   "stack" : string

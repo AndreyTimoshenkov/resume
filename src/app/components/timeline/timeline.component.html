@@ -1,1 +1,6 @@
-<p>{{ startDate | date: 'LLLL yyyy'}} - {{ endDate | date: 'LLLL yyyy'}} ({{ getMonthDifference(startDate, endDate) | getYearsAndMonths }})</p>
+<p>{{ startDate | date: 'LLLL yyyy'}} - {{ endDate | date: 'LLLL yyyy'}} ({{ getMonthDifference(startDate, endDate) | getYearsAndMonths }}) </p>
+
+<ng-container *ngIf="currentlyEmployed">
+  <i class="pi pi-check-circle" style="color: green;"></i>
+  <span> Текущее место работы </span>
+</ng-container>

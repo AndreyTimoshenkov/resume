@@ -19,10 +19,11 @@ import { NgStyle } from '@angular/common';
 })
 export class AppComponent {
   dataService = inject(DataService);
-  data: Signal<IWorkplace[] | undefined> = toSignal(this.dataService?.getData());
+  data: Signal<IWorkplace[]>;
   // totalExperience: Signal<number | undefined> = computed(() => this.data()?.forEach(el => el.))
 
   constructor() {
-    // this.data()?.forEach((el: IWorkplace) => console.log(el))
+    //@ts-ignore
+    this.data = toSignal(this.dataService.getData());
   }
 }

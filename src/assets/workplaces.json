@@ -1,19 +1,16 @@
 {"workplaces": [
   { "company": "Decartus",
-    "position" : "Junior Ангуляр Разработчик",
+    "position" : "Ангуляр Разработчик",
     "start": "2024, 3",
-    "end": "0",
-    "currentlyEmployed" : "true",
     "responsibilities" : "Lorem ipsum odor amet, consectetuer adipiscing elit. Massa luctus interdum maximus inceptos; ipsum pulvinar vulputate. Mi sollicitudin pharetra sapien ac in odio iaculis. Imperdiet nec nulla erat dui elementum. Tempus libero eleifend pretium, sociosqu a est. Sagittis duis dictumst lobortis justo posuere sodales vitae ultricies.",
-    "stack" : "Angular 16+, RxJs 6.5+, Angular Material 16+"
+    "stack" : "Angular 16, Angular 18, RxJs 6.5+, Angular Material, NG Prime, OpenLayers, Node.js, Gitlab"
   },
   {
     "company": "Lanit Tercom",
     "position" : "Ангуляр Разработчик (cтажёр)",
     "start": "2023, 9",
     "end": "2024, 1",
-    "currentlyEmployed" : "false",
     "responsibilities" : "Lorem ipsum odor amet, consectetuer adipiscing elit. Massa luctus interdum maximus inceptos; ipsum pulvinar vulputate. Mi sollicitudin pharetra sapien ac in odio iaculis. Imperdiet nec nulla erat dui elementum. Tempus libero eleifend pretium, sociosqu a est. Sagittis duis dictumst lobortis justo posuere sodales vitae ultricies.",
-    "stack" : "Angular 16+, RxJs 6.5+, Angular Material 16+"
+    "stack" : "Angular 15, RxJs 6.5+, Taiga UI, Gitlab, Swagger"
   }
 ]}
