@@ -2,12 +2,14 @@ import { ChangeDetectionStrategy, Component, Input, OnChanges } from '@angular/c
 import { CardModule } from 'primeng/card';
 import { AvatarModule } from 'primeng/avatar';
 import { TimelineComponent } from '../timeline/timeline.component';
+import { StackComponent } from '../stack/stack.component';
+import { ITech } from '../../interfaces/tech.interface';
 
 @Component({
   selector: 'cv-work-place',
   standalone: true,
   imports: [
-    CardModule, AvatarModule, TimelineComponent
+    CardModule, AvatarModule, TimelineComponent, StackComponent
   ],
   templateUrl: './work-place.component.html',
   styleUrl: './work-place.component.less',
@@ -19,6 +21,7 @@ export class WorkPlaceComponent implements OnChanges{
   @Input() end: number | undefined;
   @Input() description: string;
   @Input() position: string;
+  @Input() stack: ITech[];
 
   ngOnChanges(): void {}
 }

@@ -24,6 +24,6 @@ export class AppComponent {
 
   constructor() {
     //@ts-ignore
-    this.data = toSignal(this.dataService.getData());
+    this.data = toSignal(this.dataService.getWorkplaces());
   }
 }

@@ -14,7 +14,7 @@ import { GetYearsAndMonthsPipe } from '../../pipes/work-experience.pipe';
 })
 export class TimelineComponent implements OnChanges {
   @Input() start: number;
-  @Input() end: number;
+  @Input() end: number | undefined;
 
   ngOnChanges(changes: SimpleChanges): void {
     // if (changes['currentlyEmployed'] || changes['end']) {}

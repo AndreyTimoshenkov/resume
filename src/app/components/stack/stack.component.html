@@ -1,0 +1,11 @@
+<!-- <p-chip
+  label="Amy Elsner"
+  image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+  alt="Avatar image" /> -->
+
+  @for (tech of stack; track $index) {
+    <p-chip
+      label="{{tech.name}}"
+      image="{{tech.url}}"
+      alt="Avatar image" />
+  }

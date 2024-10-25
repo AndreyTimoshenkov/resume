@@ -1,3 +1,5 @@
+import { ITech } from "./tech.interface";
+
 export interface IWorkplace {
   "company": string,
   "position" : string,
@@ -5,7 +7,7 @@ export interface IWorkplace {
   "end"?: number,
   "currentlyEmployed" : boolean,
   "responsibilities" : string,
-  "stack" : string
+  "stack" : ITech[]
 }
 
 export interface IResumeData {

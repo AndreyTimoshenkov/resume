@@ -12,7 +12,7 @@ export class DataService {
 
   private readonly baseUrl: string = 'assets/workplaces.json';
 
-  getData(): Observable<IWorkplace[]> {
+  getWorkplaces(): Observable<IWorkplace[]> {
     return this.http.get<IResumeData>(this.baseUrl).pipe(map(data => data.workplaces));
   }
 }

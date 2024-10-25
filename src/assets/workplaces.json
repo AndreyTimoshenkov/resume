@@ -3,7 +3,16 @@
     "position" : "Ангуляр Разработчик",
     "start": "2024, 3",
     "responsibilities" : "Lorem ipsum odor amet, consectetuer adipiscing elit. Massa luctus interdum maximus inceptos; ipsum pulvinar vulputate. Mi sollicitudin pharetra sapien ac in odio iaculis. Imperdiet nec nulla erat dui elementum. Tempus libero eleifend pretium, sociosqu a est. Sagittis duis dictumst lobortis justo posuere sodales vitae ultricies.",
-    "stack" : "Angular 16, Angular 18, RxJs 6.5+, Angular Material, NG Prime, OpenLayers, Node.js, Gitlab"
+    "stack" : [
+      {"name" : "Angular 16", "url" : "assets/angular.svg"},
+      {"name" : "RxJs 6.5+", "url" : "assets/rxjs.svg"},
+      {"name" : "Angular Material", "url" : ""},
+      {"name" : "NG Prime", "url" : ""},
+      {"name" : "OpenLayers", "url" : ""},
+      {"name" : "Node.js", "url" : ""},
+      {"name" : "Gitlab", "url" : ""}
+
+    ]
   },
   {
     "company": "Lanit Tercom",
@@ -11,6 +20,12 @@
     "start": "2023, 9",
     "end": "2024, 1",
     "responsibilities" : "Lorem ipsum odor amet, consectetuer adipiscing elit. Massa luctus interdum maximus inceptos; ipsum pulvinar vulputate. Mi sollicitudin pharetra sapien ac in odio iaculis. Imperdiet nec nulla erat dui elementum. Tempus libero eleifend pretium, sociosqu a est. Sagittis duis dictumst lobortis justo posuere sodales vitae ultricies.",
-    "stack" : "Angular 15, RxJs 6.5+, Taiga UI, Gitlab, Swagger"
+    "stack" : [
+      {"name" : "Angular 15", "url" : "assets/angular.svg"},
+      {"name" : "RxJs 6.5+", "url" : "assets/rxjs.svg"},
+      {"name" : "Taiga UI", "url" : ""},
+      {"name" : "Gitlab", "url" : ""},
+      {"name" : "Swagger", "url" : ""}
+    ]
   }
 ]}
