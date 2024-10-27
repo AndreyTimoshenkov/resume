@@ -4,19 +4,21 @@ import { AvatarModule } from 'primeng/avatar';
 import { TimelineComponent } from '../timeline/timeline.component';
 import { StackComponent } from '../stack/stack.component';
 import { ITech } from '../../interfaces/tech.interface';
+import { ICompany } from '../../interfaces/company.interface';
+import { CompanyComponent } from '../company/company.component';
 
 @Component({
   selector: 'cv-work-place',
   standalone: true,
   imports: [
-    CardModule, AvatarModule, TimelineComponent, StackComponent
+    CardModule, AvatarModule, TimelineComponent, StackComponent, CompanyComponent
   ],
   templateUrl: './work-place.component.html',
   styleUrl: './work-place.component.less',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class WorkPlaceComponent implements OnChanges{
-  @Input() company: string;
+  @Input() company: ICompany;
   @Input() start: number;
   @Input() end: number | undefined;
   @Input() responsibilities: string | string[];

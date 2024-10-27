@@ -1,6 +1,8 @@
 <div class="card flex justify-content-center">
   <p-card [header]="position">
-    <h3>{{company}}</h3>
+    <cv-company
+      [company]="company"
+    ></cv-company>
     <cv-timeline
       [start]="start"
       [end]="end"

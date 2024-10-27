@@ -1,12 +1,13 @@
 import { ChangeDetectionStrategy, Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { CommonModule, DatePipe } from '@angular/common';
 import { GetYearsAndMonthsPipe } from '../../pipes/work-experience.pipe';
+import { TagModule } from 'primeng/tag';
 
 @Component({
   selector: 'cv-timeline',
   standalone: true,
   imports: [
-    DatePipe, GetYearsAndMonthsPipe, CommonModule
+    DatePipe, GetYearsAndMonthsPipe, CommonModule, TagModule
   ],
   templateUrl: './timeline.component.html',
   styleUrls: ['./timeline.component.less'],

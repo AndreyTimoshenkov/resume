@@ -1,5 +1,9 @@
 {"workplaces": [
-  { "company": "Decartus",
+  { "company": {
+      "name": "Decartus",
+      "logo": "https://decartus.team/wp-content/uploads/2023/09/cropped-favicon-32x32.png",
+      "website" : "https://decartus.team/"
+    },
     "position" : "Ангуляр Разработчик",
     "start": "2024, 3",
     "responsibilities" : [
@@ -19,7 +23,11 @@
     ]
   },
   {
-    "company": "Lanit Tercom",
+    "company": {
+      "name" : "Lanit Tercom",
+      "logo": "https://lanit-tercom.ru/favicon.ico",
+      "website": "https://lanit-tercom.ru/"
+    },
     "position" : "Ангуляр Разработчик (cтажёр)",
     "start": "2023, 9",
     "end": "2024, 1",
