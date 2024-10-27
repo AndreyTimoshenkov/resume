@@ -6,9 +6,11 @@
       [end]="end"
     >
     </cv-timeline>
-    <p class="m-0">
-      {{description}}
-    </p>
+    <ul>
+      @for (responsibility of responsibilities; track $index) {
+        <li>{{responsibility}}</li>
+      }
+    </ul>
     <cv-stack
       [stack]="stack"
     ></cv-stack>

@@ -19,7 +19,7 @@ export class WorkPlaceComponent implements OnChanges{
   @Input() company: string;
   @Input() start: number;
   @Input() end: number | undefined;
-  @Input() description: string;
+  @Input() responsibilities: string | string[];
   @Input() position: string;
   @Input() stack: ITech[];
 
