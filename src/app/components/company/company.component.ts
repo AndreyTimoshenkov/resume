@@ -12,4 +12,8 @@ import { ButtonModule } from 'primeng/button';
 })
 export class CompanyComponent {
   @Input() company: ICompany;
+
+  redirectToWebsite(site: string) {
+    window.open(site);
+  }
 }
