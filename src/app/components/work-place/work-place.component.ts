@@ -1,11 +1,11 @@
 import { ChangeDetectionStrategy, Component, Input, OnChanges } from '@angular/core';
-import { CardModule } from 'primeng/card';
 import { AvatarModule } from 'primeng/avatar';
 import { TimelineComponent } from '../timeline/timeline.component';
 import { StackComponent } from '../stack/stack.component';
 import { ITech } from '../../interfaces/tech.interface';
 import { ICompany } from '../../interfaces/company.interface';
 import { CompanyComponent } from '../company/company.component';
+import { CardModule } from 'primeng/card';
 
 @Component({
   selector: 'cv-work-place',

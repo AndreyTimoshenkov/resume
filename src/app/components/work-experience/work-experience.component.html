@@ -1,0 +1,13 @@
+{{ totalWorkExperience | getYearsAndMonths }}
+
+@for (workplace of workplaces; track workplace.company) {
+
+  <cv-work-place
+    [company]="workplace.company"
+    [position]="workplace.position"
+    [start]="workplace.start"
+    [end]="workplace.end"
+    [responsibilities]="workplace.responsibilities"
+    [stack]="workplace.stack"
+  ></cv-work-place>
+}

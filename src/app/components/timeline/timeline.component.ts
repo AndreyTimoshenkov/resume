@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, Input, OnChanges, SimpleChanges } f
 import { CommonModule, DatePipe } from '@angular/common';
 import { GetYearsAndMonthsPipe } from '../../pipes/work-experience.pipe';
 import { TagModule } from 'primeng/tag';
+import { endDateSanitiser, getMonthDifference, startDateSanitiser } from '../../helpers/timeline-helpers';
 
 @Component({
   selector: 'cv-timeline',
@@ -17,26 +18,21 @@ export class TimelineComponent implements OnChanges {
   @Input() start: number;
   @Input() end: number | undefined;
 
-  ngOnChanges(changes: SimpleChanges): void {
-    // if (changes['currentlyEmployed'] || changes['end']) {}
-    // console.log(this.currentlyEmployed);
-  }
+  ngOnChanges(changes: SimpleChanges): void {}
 
   get startDate(): Date {
-    return new Date(this.start);
+    return startDateSanitiser(this.start);
   }
 
   get endDate(): Date {
-    return this.end ? new Date(this.end) : new Date(Date.now());
+    return endDateSanitiser(this.end);
   }
 
   get currentlyEmployed() {
     return this.end ? false : true;
   }
 
-  getMonthDifference(start: Date, end: Date): number {
-    const years = end.getFullYear() - start.getFullYear();
-    const months = end.getMonth() - start.getMonth();
-    return years * 12 + months;
+  get duration() {
+    return getMonthDifference(this.startDate, this.endDate);
   }
 }

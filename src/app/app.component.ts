@@ -4,13 +4,15 @@ import { WorkPlaceComponent } from './components/work-place/work-place.component
 import { DataService } from './services/data.service';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { IWorkplace } from './interfaces/workplace.interface';
-import { NgStyle } from '@angular/common';
+import { BioComponent } from './components/bio/bio.component';
+import { AccordionModule } from 'primeng/accordion';
+import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet, WorkPlaceComponent, NgStyle
+    RouterOutlet, BioComponent, AccordionModule, WorkExperienceComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.less',

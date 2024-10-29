@@ -1,20 +1,18 @@
-<div class="card flex justify-content-center">
-  <p-card [header]="position">
-    <cv-company
-      [company]="company"
-    ></cv-company>
-    <cv-timeline
-      [start]="start"
-      [end]="end"
-    >
-    </cv-timeline>
-    <ul>
-      @for (responsibility of responsibilities; track $index) {
-        <li>{{responsibility}}</li>
-      }
-    </ul>
-    <cv-stack
-      [stack]="stack"
-    ></cv-stack>
-  </p-card>
-</div>
+<p-card [header]="position">
+  <cv-company
+    [company]="company"
+  ></cv-company>
+  <cv-timeline
+    [start]="start"
+    [end]="end"
+  >
+  </cv-timeline>
+  <ul>
+    @for (responsibility of responsibilities; track $index) {
+      <li>{{responsibility}}</li>
+    }
+  </ul>
+  <cv-stack
+    [stack]="stack"
+  ></cv-stack>
+</p-card>
