@@ -1,1 +1,12 @@
-<p>bio works!</p>
+<!-- {{ experience | getYearsAndMonths }} -->
+<!-- { "label": "Возраст:", "icon" : "pi-user", "text": "34"}, -->
+
+<!-- <cv-list-item>
+
+</cv-list-item> -->
+@for(item of bio(); track $index;) {
+  <cv-list-item
+    [listItem]="item"
+    [experience]="experience"
+  ></cv-list-item>
+}

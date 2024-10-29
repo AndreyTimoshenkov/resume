@@ -1,27 +1,18 @@
-<!-- <cv-bio></cv-bio> -->
-
-<!-- @for (workplace of data(); track workplace.company) {
-  <cv-work-place
-    [company]="workplace.company"
-    [position]="workplace.position"
-    [start]="workplace.start"
-    [end]="workplace.end"
-    [responsibilities]="workplace.responsibilities"
-    [stack]="workplace.stack"
-  ></cv-work-place>
-} -->
-
-
 <div class="card flex justify-content-center">
-  <p-accordion [multiple]="true" [activeIndex]="[0, 1, 2]">
+
+  <p-accordion [multiple]="true" [activeIndex]="[0, 1]">
+
       <p-accordionTab header="О себе">
-        123
+        <cv-bio
+          [experience]="totalWorkExperience"
+        ></cv-bio>
       </p-accordionTab>
+
       <p-accordionTab header="Опыт работы">
-        <cv-work-experience [workplaces]="data()"></cv-work-experience>
+        <cv-work-experience
+          [workplaces]="data()"
+        ></cv-work-experience>
       </p-accordionTab>
-      <p-accordionTab header="Навыки">
-        123
-      </p-accordionTab>
+
   </p-accordion>
 </div>

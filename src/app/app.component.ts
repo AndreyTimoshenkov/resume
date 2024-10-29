@@ -1,12 +1,12 @@
-import { ChangeDetectionStrategy, Component, computed, inject, Signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, Signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { WorkPlaceComponent } from './components/work-place/work-place.component';
 import { DataService } from './services/data.service';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { IWorkplace } from './interfaces/workplace.interface';
 import { BioComponent } from './components/bio/bio.component';
 import { AccordionModule } from 'primeng/accordion';
 import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
+import { endDateSanitiser, getMonthDifference, startDateSanitiser } from './helpers/timeline-helpers';
 
 @Component({
   selector: 'app-root',
@@ -22,10 +22,17 @@ import { WorkExperienceComponent } from './components/work-experience/work-exper
 export class AppComponent {
   dataService = inject(DataService);
   data: Signal<IWorkplace[]>;
-  // totalExperience: Signal<number | undefined> = computed(() => this.data()?.forEach(el => el.))
 
   constructor() {
     //@ts-ignore
     this.data = toSignal(this.dataService.getWorkplaces());
+  }
+
+  get totalWorkExperience() {
+    let result = 0;
+    this.data()?.forEach(job => {
+      result += getMonthDifference(startDateSanitiser(job.start), endDateSanitiser(job.end))
+    })
+    return result;
   }
 }

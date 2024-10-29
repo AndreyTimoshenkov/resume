@@ -1,0 +1,10 @@
+{
+  "bio": [
+    { "label": "Пол:", "icon" : "pi-mars", "text": "Male"},
+    { "label": "Дата рождения:", "icon" : "pi-user", "text": "01.07.1990"},
+    { "label": "Опыт работы:", "icon" : "pi-briefcase", "text":""},
+    { "label": "Местоположение:", "icon" : "pi-map-marker", "text": "Севастополь"},
+    { "label": "Ожидаемая зп:", "icon" : "pi-dollar", "text": "300k/наносек"},
+    { "label": "Часовой пояс:", "icon" : "pi-clock", "text":"МСК (UTC+3)"}
+  ]
+}

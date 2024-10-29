@@ -24,14 +24,21 @@ export class GetYearsAndMonthsPipe implements PipeTransform {
 }
 
 export function pluralise(term: number, array: Array<string>) {
-	if (term === 0) return '';
+	if (term === 0) { return '';  }
+
 	let result = `${term} `;
-	if (term % 10 === 1) {
-		result += array[0];
-	} else if (term % 10 >= 2 && term % 10 < 5) {
-		result += array[1];
-	} else if (term % 10 >= 5 || term % 10 === 0) {
-		result += array[2];
-	}
+
+  switch (true){
+    case (term % 10 === 1 && term < 10):
+      result += array[0];
+      break;
+    case (term % 10 >= 5 || term % 10 === 0 || term > 10 && term < 20):
+      result += array[2];
+      break;
+    case (term % 10 >= 2 && term % 10 < 5):
+      result += array[1];
+      break;
+  }
+
 	return result;
 }
