@@ -1,12 +1,10 @@
-<!-- {{ experience | getYearsAndMonths }} -->
-<!-- { "label": "Возраст:", "icon" : "pi-user", "text": "34"}, -->
+<img src="../../../assets/ava.jpg" class="ava">
 
-<!-- <cv-list-item>
-
-</cv-list-item> -->
-@for(item of bio(); track $index;) {
-  <cv-list-item
-    [listItem]="item"
-    [experience]="experience"
-  ></cv-list-item>
-}
+<div class="bullets">
+  @for(item of bio(); track $index;) {
+    <cv-list-item
+      [listItem]="item"
+      [experience]="experience"
+    ></cv-list-item>
+  }
+</div>

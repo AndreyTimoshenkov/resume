@@ -3,14 +3,16 @@ import { IBioItem } from '../../interfaces/bio.interface';
 import { NgIf } from '@angular/common';
 import { getMonthDifference } from '../../helpers/timeline-helpers';
 import { GetYearsAndMonthsPipe } from '../../pipes/work-experience.pipe';
+import { getYears } from "../../pipes/getYearsPipe";
 
 
 @Component({
   selector: 'cv-list-item',
   standalone: true,
   imports: [
-    NgIf, GetYearsAndMonthsPipe
-  ],
+    NgIf, GetYearsAndMonthsPipe,
+    getYears
+],
   templateUrl: './list-item.component.html',
   styleUrl: './list-item.component.less',
 })
