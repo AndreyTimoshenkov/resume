@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --output-path docs --base-href '' && mv docs/browser/index.csr.html docs/browser/index.html",
+    "deploy": "npx angular-cli-ghpages --dir=docs/browser",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:resume": "node dist/resume/server/server.mjs"
