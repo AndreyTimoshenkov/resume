@@ -14,14 +14,14 @@
       "Доработка созданного коллегами функционала (guards, маршрутизация, HTTP interceptors).",
       "Работа велась с mobile-first дизайном и адаптивной вёрсткой."],
     "stack" : [
-      {"name" : "Python", "url" : "assets/icons/stack/python.ico"},
-      {"name" : "FastAPI", "url" : "assets/icons/stack/fastapi.png"},
+      {"name" : "Python", "url" : "assets/icons/stack/python.webp"},
+      {"name" : "FastAPI", "url" : "assets/icons/stack/fastapi.webp"},
       {"name" : "PostgreSQL", "url" : "assets/icons/stack/postgre.ico"},
-      {"name" : "Angular 15", "url" : "assets/icons/stack/ng.ico"},
-      {"name" : "TypeScript", "url" : "assets/icons/stack/ts.png"},
-      {"name" : "RxJs 6.5+", "url" : "assets/icons/stack/rxjs.png"},
-      {"name" : "Taiga UI", "url" : "assets/icons/stack/tui.png"},
-      {"name" : "Gitlab", "url" : "assets/icons/stack/gitlab.png"}
+      {"name" : "Angular 15", "url" : "assets/icons/stack/ng.webp"},
+      {"name" : "TypeScript", "url" : "assets/icons/stack/ts.webp"},
+      {"name" : "RxJs 6.5+", "url" : "assets/icons/stack/rxjs.webp"},
+      {"name" : "Taiga UI", "url" : "assets/icons/stack/tui.webp"},
+      {"name" : "Gitlab", "url" : "assets/icons/stack/gitlab.webp"}
     ]
   },
   { "company": {
@@ -38,15 +38,15 @@
       "Помощь стажёрам."
     ],
     "stack" : [
-      {"name" : "Angular 16", "url" : "assets/icons/stack/ng.ico"},
-      {"name" : "TypeScript", "url" : "assets/icons/stack/ts.png"},
-      {"name" : "JavaScript", "url" : "assets/icons/stack/js.png"},
-      {"name" : "RxJs 6.5+", "url" : "assets/icons/stack/rxjs.png"},
+      {"name" : "Angular 16", "url" : "assets/icons/stack/ng.webp"},
+      {"name" : "TypeScript", "url" : "assets/icons/stack/ts.webp"},
+      {"name" : "JavaScript", "url" : "assets/icons/stack/js.webp"},
+      {"name" : "RxJs 6.5+", "url" : "assets/icons/stack/rxjs.webp"},
       {"name" : "Angular Material", "url" : "assets/icons/stack/material.ico"},
-      {"name" : "NG Prime", "url" : "assets/icons/stack/ng-prime.png"},
-      {"name" : "OpenLayers", "url" : "assets/icons/stack/ol.svg"},
-      {"name" : "Node.js", "url" : "assets/icons/stack/node.png"},
-      {"name" : "Gitlab", "url" : "assets/icons/stack/gitlab.png"}
+      {"name" : "NG Prime", "url" : "assets/icons/stack/ng-prime.webp"},
+      {"name" : "OpenLayers", "url" : "assets/icons/stack/ol.webp"},
+      {"name" : "Node.js", "url" : "assets/icons/stack/node.webp"},
+      {"name" : "Gitlab", "url" : "assets/icons/stack/gitlab.webp"}
     ]
   },
   {
@@ -64,12 +64,12 @@
       "Доработка созданного коллегами функционала (guards, маршрутизация, HTTP interceptors).",
       "Работа велась с mobile-first дизайном и адаптивной вёрсткой."],
     "stack" : [
-      {"name" : "Angular 15", "url" : "assets/icons/stack/ng.ico"},
-      {"name" : "TypeScript", "url" : "assets/icons/stack/ts.png"},
-      {"name" : "RxJs 6.5+", "url" : "assets/icons/stack/rxjs.png"},
-      {"name" : "Taiga UI", "url" : "assets/icons/stack/tui.png"},
-      {"name" : "Gitlab", "url" : "assets/icons/stack/gitlab.png"},
-      {"name" : "Swagger", "url" : "assets/icons/stack/swagger.png"}
+      {"name" : "Angular 15", "url" : "assets/icons/stack/ng.webp"},
+      {"name" : "TypeScript", "url" : "assets/icons/stack/ts.webp"},
+      {"name" : "RxJs 6.5+", "url" : "assets/icons/stack/rxjs.webp"},
+      {"name" : "Taiga UI", "url" : "assets/icons/stack/tui.webp"},
+      {"name" : "Gitlab", "url" : "assets/icons/stack/gitlab.webp"},
+      {"name" : "Swagger", "url" : "assets/icons/stack/swagger.webp"}
     ]
   }
 ]}
