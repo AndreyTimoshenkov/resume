@@ -18,6 +18,7 @@
       {"name" : "FastAPI", "url" : "assets/icons/stack/fastapi.png"},
       {"name" : "PostgreSQL", "url" : "assets/icons/stack/postgre.ico"},
       {"name" : "Angular 15", "url" : "assets/icons/stack/ng.ico"},
+      {"name" : "TypeScript", "url" : "assets/icons/stack/ts.png"},
       {"name" : "RxJs 6.5+", "url" : "assets/icons/stack/rxjs.png"},
       {"name" : "Taiga UI", "url" : "assets/icons/stack/tui.png"},
       {"name" : "Gitlab", "url" : "assets/icons/stack/gitlab.png"}
@@ -38,6 +39,8 @@
     ],
     "stack" : [
       {"name" : "Angular 16", "url" : "assets/icons/stack/ng.ico"},
+      {"name" : "TypeScript", "url" : "assets/icons/stack/ts.png"},
+      {"name" : "JavaScript", "url" : "assets/icons/stack/js.png"},
       {"name" : "RxJs 6.5+", "url" : "assets/icons/stack/rxjs.png"},
       {"name" : "Angular Material", "url" : "assets/icons/stack/material.ico"},
       {"name" : "NG Prime", "url" : "assets/icons/stack/ng-prime.png"},
@@ -62,6 +65,7 @@
       "Работа велась с mobile-first дизайном и адаптивной вёрсткой."],
     "stack" : [
       {"name" : "Angular 15", "url" : "assets/icons/stack/ng.ico"},
+      {"name" : "TypeScript", "url" : "assets/icons/stack/ts.png"},
       {"name" : "RxJs 6.5+", "url" : "assets/icons/stack/rxjs.png"},
       {"name" : "Taiga UI", "url" : "assets/icons/stack/tui.png"},
       {"name" : "Gitlab", "url" : "assets/icons/stack/gitlab.png"},
