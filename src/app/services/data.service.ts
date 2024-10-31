@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { filter, map, Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { IResumeData, IWorkplace } from '../interfaces/workplace.interface';
 import { IBio, IBioItem } from '../interfaces/bio.interface';
-// import { MenuItem } from 'primeng/api';
+import { IPortfolio, IProject } from '../interfaces/portfolio.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -12,7 +12,7 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  private readonly baseUrl: string = 'assets';
+  private readonly baseUrl: string = 'assets/data';
 
   getWorkplaces(): Observable<IWorkplace[]> {
     const url = this.baseUrl + '/workplaces.json';
@@ -21,6 +21,11 @@ export class DataService {
 
   getBio(): Observable<IBioItem[]> {
     const url = this.baseUrl + '/bio.json';
-    return this.http.get<IBio>(url).pipe(map(data => data!.bio));
+    return this.http.get<IBio>(url).pipe(map(data => data.bio));
+  }
+
+  getPortfolio(): Observable<IPortfolio> {
+    const url = this.baseUrl + '/portfolio.json';
+    return this.http.get<IPortfolio>(url);
   }
 }

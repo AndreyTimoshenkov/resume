@@ -1,6 +1,6 @@
 <div class="card flex justify-content-center">
 
-  <p-accordion [multiple]="true" [activeIndex]="[0, 1]">
+  <p-accordion [multiple]="true" [activeIndex]="[2]">
 
       <p-accordionTab header="О себе">
         <cv-bio
@@ -12,6 +12,10 @@
         <cv-work-experience
           [workplaces]="data()"
         ></cv-work-experience>
+      </p-accordionTab>
+
+      <p-accordionTab header="Портфолио">
+        <cv-portfolio></cv-portfolio>
       </p-accordionTab>
 
   </p-accordion>

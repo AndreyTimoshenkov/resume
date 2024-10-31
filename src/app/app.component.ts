@@ -7,12 +7,13 @@ import { BioComponent } from './components/bio/bio.component';
 import { AccordionModule } from 'primeng/accordion';
 import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
 import { endDateSanitiser, getMonthDifference, startDateSanitiser } from './helpers/timeline-helpers';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet, BioComponent, AccordionModule, WorkExperienceComponent
+    RouterOutlet, BioComponent, AccordionModule, WorkExperienceComponent, PortfolioComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.less',

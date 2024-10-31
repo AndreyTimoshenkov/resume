@@ -1,0 +1,20 @@
+{
+  "portfolio" : [
+    {
+      "name": "512",
+      "link" : "https://andreytimoshenkov.github.io/512",
+      "description" : "A simple yet absorbing game to play",
+      "stack" : [
+        {"name" : "Angular 16", "url" : "assets/icons/stack/ng.webp"},
+        {"name" : "TypeScript", "url" : "assets/icons/stack/ts.webp"},
+        {"name" : "JavaScript", "url" : "assets/icons/stack/js.webp"},
+        {"name" : "RxJs 6.5+", "url" : "assets/icons/stack/rxjs.webp"},
+        {"name" : "Angular Material", "url" : "assets/icons/stack/material.ico"},
+        {"name" : "NG Prime", "url" : "assets/icons/stack/ng-prime.webp"},
+        {"name" : "OpenLayers", "url" : "assets/icons/stack/ol.webp"},
+        {"name" : "Node.js", "url" : "assets/icons/stack/node.webp"},
+        {"name" : "Gitlab", "url" : "assets/icons/stack/gitlab.webp"}
+      ]
+    }
+  ]
+}
