@@ -1,0 +1,27 @@
+    <!-- [responsiveOptions]="responsiveOptions" -->
+    <!-- [showItemNavigators]="true" -->
+    <h2>
+      {{project.name}}
+    </h2>
+    <p-galleria
+      [value]="pics"
+      [numVisible]="5"
+      [circular]="true"
+      [showItemNavigators]="true"
+      [showThumbnails]="true"
+      [containerStyle]="{ 'max-width': '640px' }"
+      >
+      <!-- [showItemNavigatorsOnHover]="true" -->
+      <!-- [autoPlay]="true" -->
+      <ng-template pTemplate="item" let-item>
+        <img [src]="item.url" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+            <div class="grid grid-nogutter justify-content-center">
+                <img [src]="item.thumbnail" style="display: block;" />
+            </div>
+        </ng-template>
+    </p-galleria>
+    <h3>
+      {{project.description}}
+    </h3>

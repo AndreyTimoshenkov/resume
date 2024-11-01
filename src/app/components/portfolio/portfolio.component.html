@@ -1,27 +1,14 @@
+<!-- [numScroll]="1"
 <p-carousel
-  [numVisible]="3"
-  [numScroll]="1"
-  [value]="(portfolio | async) ?? []"
+  [numVisible]="1"
+  [circular]="true"
+  [value]="(portfolio$ | async) ?? []"
+  [showNavigators]="false"
   >
-  <!-- [responsiveOptions]="responsiveOptions" -->
+  [responsiveOptions]="responsiveOptions"
   <ng-template let-project pTemplate="item">
-    <div class="border-1 surface-border border-round m-2 p-3">
-      <div class="mb-3">
-        <div class="relative mx-auto">
-          <img
-            src={{project.image}}
-            [alt]="project.name"
-            class="w-full border-round" />
-            <!-- [severity]="getSeverity(product.inventoryStatus)" -->
-          <p-tag
-            [value]="project.inventoryStatus"
-            class="absolute"
-            [ngStyle]="{ 'left.px': 5, 'top.px': 5 }" />
-        </div>
-      </div>
-      <div class="mb-3 font-medium">
-        {{ project.name }}
-      </div>
+
+
       <div class="flex justify-content-between align-items-center">
         <div class="mt-0 font-semibold text-xl">
             {{ '$' + project.price }}
@@ -31,6 +18,12 @@
             <p-button icon="pi pi-shopping-cart" styleClass="ml-2" />
         </span>
       </div>
-    </div>
   </ng-template>
-</p-carousel>
+</p-carousel> -->
+
+@for (project of portfolio$ | async; track project.name) {
+  <cv-portfolio-item
+    [project]="project"
+  >
+  </cv-portfolio-item>
+}

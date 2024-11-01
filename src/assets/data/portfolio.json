@@ -3,6 +3,16 @@
     {
       "name": "512",
       "link" : "https://andreytimoshenkov.github.io/512",
+      "pics": [
+        {"url" : "assets/portfolio/512_desk_with_bgc.png", "thumbnail" : "assets/portfolio/512_desk_tn.webp"},
+        {"url" : "assets/portfolio/512_mob_with_bgc.png", "thumbnail" : "assets/portfolio/512_mob_tn.webp"},
+        {"url" : "assets/portfolio/512_desk_with_bgc.png", "thumbnail" : "assets/portfolio/512_desk_tn.webp"},
+        {"url" : "assets/portfolio/512_mob_with_bgc.png", "thumbnail" : "assets/portfolio/512_mob_tn.webp"},
+        {"url" : "assets/portfolio/512_desk_with_bgc.png", "thumbnail" : "assets/portfolio/512_desk_tn.webp"},
+        {"url" : "assets/portfolio/512_mob_with_bgc.png", "thumbnail" : "assets/portfolio/512_mob_tn.webp"},
+        {"url" : "assets/portfolio/512_desk_with_bgc.png", "thumbnail" : "assets/portfolio/512_desk_tn.webp"},
+        {"url" : "assets/portfolio/512_mob_with_bgc.png", "thumbnail" : "assets/portfolio/512_mob_tn.webp"}
+      ],
       "description" : "A simple yet absorbing game to play",
       "stack" : [
         {"name" : "Angular 16", "url" : "assets/icons/stack/ng.webp"},
