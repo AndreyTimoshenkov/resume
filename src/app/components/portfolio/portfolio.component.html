@@ -1,29 +1,3 @@
-<!-- [numScroll]="1"
-<p-carousel
-  [numVisible]="1"
-  [circular]="true"
-  [value]="(portfolio$ | async) ?? []"
-  [showNavigators]="false"
-  >
-  [responsiveOptions]="responsiveOptions"
-  <ng-template let-project pTemplate="item">
-
-
-      <div class="flex justify-content-between align-items-center">
-        <div class="mt-0 font-semibold text-xl">
-            {{ '$' + project.price }}
-        </div>
-        <span>
-            <p-button icon="pi pi-heart" severity="secondary" [outlined]="true" />
-            <p-button icon="pi pi-shopping-cart" styleClass="ml-2" />
-        </span>
-      </div>
-  </ng-template>
-</p-carousel> -->
-
 @for (project of portfolio$ | async; track project.name) {
-  <cv-portfolio-item
-    [project]="project"
-  >
-  </cv-portfolio-item>
+  <cv-portfolio-item [project]="project"></cv-portfolio-item>
 }

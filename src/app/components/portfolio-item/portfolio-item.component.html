@@ -1,27 +1,30 @@
     <!-- [responsiveOptions]="responsiveOptions" -->
     <!-- [showItemNavigators]="true" -->
-    <h2>
-      {{project.name}}
-    </h2>
+    <div class="text">
+      <h2>
+        {{project?.name}}
+      </h2>
+      <div class="buttons">
+        <p-button label="Github" icon="pi pi-github" (click)="redirectToWebsite(project.git)"/>
+        <p-button label="Live demo" icon="pi pi-external-link" (click)="redirectToWebsite(project.link)"/>
+      </div>
+      <p class="description"> {{project?.description}}</p>
+
+      <cv-stack
+        [stack]="project.stack"
+      ></cv-stack>
+    </div>
     <p-galleria
       [value]="pics"
       [numVisible]="5"
       [circular]="true"
       [showItemNavigators]="true"
-      [showThumbnails]="true"
-      [containerStyle]="{ 'max-width': '640px' }"
-      >
+      [showThumbnails]="false"
+    >
+<!--      [containerStyle]="{ 'max-width': '5%' }"-->
       <!-- [showItemNavigatorsOnHover]="true" -->
       <!-- [autoPlay]="true" -->
       <ng-template pTemplate="item" let-item>
         <img [src]="item.url" />
-        </ng-template>
-        <ng-template pTemplate="thumbnail" let-item>
-            <div class="grid grid-nogutter justify-content-center">
-                <img [src]="item.thumbnail" style="display: block;" />
-            </div>
-        </ng-template>
+      </ng-template>
     </p-galleria>
-    <h3>
-      {{project.description}}
-    </h3>

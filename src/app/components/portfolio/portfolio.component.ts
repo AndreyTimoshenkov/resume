@@ -1,11 +1,11 @@
-import { Component, inject } from '@angular/core';
-import { CarouselModule } from 'primeng/carousel';
-import { ButtonModule } from 'primeng/button';
-import { TagModule } from 'primeng/tag';
-import { DataService } from '../../services/data.service';
-import { IPic, IProject } from '../../interfaces/portfolio.interface';
-import { map, Observable, of } from 'rxjs';
-import { PortfolioItemComponent } from '../portfolio-item/portfolio-item.component';
+import {Component, inject} from '@angular/core';
+import {CarouselModule} from 'primeng/carousel';
+import {ButtonModule} from 'primeng/button';
+import {TagModule} from 'primeng/tag';
+import {DataService} from '../../services/data.service';
+import {IProject} from '../../interfaces/portfolio.interface';
+import {map, Observable, of} from 'rxjs';
+import {PortfolioItemComponent} from '../portfolio-item/portfolio-item.component';
 
 @Component({
   selector: 'cv-portfolio',

@@ -1,29 +1,35 @@
 {
   "portfolio" : [
     {
-      "name": "512",
+      "name": "The 512 game",
       "link" : "https://andreytimoshenkov.github.io/512",
+      "git" : "https://github.com/AndreyTimoshenkov/512",
       "pics": [
-        {"url" : "assets/portfolio/512_desk_with_bgc.png", "thumbnail" : "assets/portfolio/512_desk_tn.webp"},
-        {"url" : "assets/portfolio/512_mob_with_bgc.png", "thumbnail" : "assets/portfolio/512_mob_tn.webp"},
-        {"url" : "assets/portfolio/512_desk_with_bgc.png", "thumbnail" : "assets/portfolio/512_desk_tn.webp"},
-        {"url" : "assets/portfolio/512_mob_with_bgc.png", "thumbnail" : "assets/portfolio/512_mob_tn.webp"},
-        {"url" : "assets/portfolio/512_desk_with_bgc.png", "thumbnail" : "assets/portfolio/512_desk_tn.webp"},
-        {"url" : "assets/portfolio/512_mob_with_bgc.png", "thumbnail" : "assets/portfolio/512_mob_tn.webp"},
         {"url" : "assets/portfolio/512_desk_with_bgc.png", "thumbnail" : "assets/portfolio/512_desk_tn.webp"},
         {"url" : "assets/portfolio/512_mob_with_bgc.png", "thumbnail" : "assets/portfolio/512_mob_tn.webp"}
       ],
-      "description" : "A simple yet absorbing game to play",
+      "description" : "A simple yet absorbing game to play. This is my attempt at copying the popular game '2048' with Angular 18, hostbinding and signals. ",
       "stack" : [
-        {"name" : "Angular 16", "url" : "assets/icons/stack/ng.webp"},
+        {"name" : "Angular 18", "url" : "assets/icons/stack/ng.webp"},
         {"name" : "TypeScript", "url" : "assets/icons/stack/ts.webp"},
-        {"name" : "JavaScript", "url" : "assets/icons/stack/js.webp"},
-        {"name" : "RxJs 6.5+", "url" : "assets/icons/stack/rxjs.webp"},
-        {"name" : "Angular Material", "url" : "assets/icons/stack/material.ico"},
-        {"name" : "NG Prime", "url" : "assets/icons/stack/ng-prime.webp"},
-        {"name" : "OpenLayers", "url" : "assets/icons/stack/ol.webp"},
-        {"name" : "Node.js", "url" : "assets/icons/stack/node.webp"},
-        {"name" : "Gitlab", "url" : "assets/icons/stack/gitlab.webp"}
+        {"name" : "ngx-translate", "url" : "assets/icons/stack/ngx-translate.webp"},
+        {"name" : "Github", "url" : "assets/icons/stack/github.webp"}
+      ]
+    },
+    {
+      "name": "The 512 game",
+      "link" : "https://andreytimoshenkov.github.io/512",
+      "git" : "https://github.com/AndreyTimoshenkov/512",
+      "pics": [
+        {"url" : "assets/portfolio/512_desk_with_bgc.png", "thumbnail" : "assets/portfolio/512_desk_tn.webp"},
+        {"url" : "assets/portfolio/512_mob_with_bgc.png", "thumbnail" : "assets/portfolio/512_mob_tn.webp"}
+      ],
+      "description" : "A simple yet absorbing game to play. This is my attempt at copying the popular game '2048' with Angular 18, hostbinding and signals. ",
+      "stack" : [
+        {"name" : "Angular 18", "url" : "assets/icons/stack/ng.webp"},
+        {"name" : "TypeScript", "url" : "assets/icons/stack/ts.webp"},
+        {"name" : "ngx-translate", "url" : "assets/icons/stack/ngx-translate.webp"},
+        {"name" : "Github", "url" : "assets/icons/stack/github.webp"}
       ]
     }
   ]
