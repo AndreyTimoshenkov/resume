@@ -1,3 +1,9 @@
-@for (project of portfolio$ | async; track project.name) {
-  <cv-portfolio-item [project]="project"></cv-portfolio-item>
-}
+<div class="card">
+  <p-tabView>
+    @for (project of portfolio$ | async; track $index) {
+      <p-tabPanel header={{project.name}}>
+        <cv-portfolio-item [project]="project"></cv-portfolio-item>
+      </p-tabPanel>
+    }
+  </p-tabView>
+</div>
