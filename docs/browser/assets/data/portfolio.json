@@ -21,8 +21,8 @@
       "link" : "https://andreytimoshenkov.github.io/attack-logs",
       "git" : "https://github.com/AndreyTimoshenkov/attack-logs",
       "pics": [
-        {"url" : "assets/portfolio/attack-logs.webp"},
-        {"url" : "assets/portfolio/attack-logs_mob.webp"}
+        {"url" : "assets/portfolio/attack-logs_with_bgc.png"},
+        {"url" : "assets/portfolio/attack-logs_mob_with_bgc.png"}
       ],
       "description" : "A test task created using RxJs, Angular 18 and Angular Material. Logs are updated based on the applied filters.",
       "stack" : [
@@ -38,10 +38,10 @@
       "link" : "https://andreytimoshenkov.github.io/newsClone",
       "git" : "https://github.com/AndreyTimoshenkov/newsClone",
       "pics": [
-        {"url" : "assets/portfolio/ynews_desk1.webp"},
-        {"url" : "assets/portfolio/ynews_desk2.webp"},
-        {"url" : "assets/portfolio/ynews_mob1.webp"},
-        {"url" : "assets/portfolio/ynews_mob2.webp"}
+        {"url" : "assets/portfolio/ynews_desk1_with_bgc.png"},
+        {"url" : "assets/portfolio/ynews_desk2_with_bgc.png"},
+        {"url" : "assets/portfolio/ynews_mob1_with_bgc.png"},
+        {"url" : "assets/portfolio/ynews_mob2_with_bgc.png"}
       ],
       "description" : "YCombinator Hacker News front page clone created with the use of the official API. Comments are nested within one another to form threads. Alerts created with Taiga UI kit.",
       "stack" : [

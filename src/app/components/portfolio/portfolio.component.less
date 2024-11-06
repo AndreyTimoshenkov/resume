@@ -3,12 +3,16 @@
    flex-direction: column;
    justify-content: center;
    gap: 2rem;
+
    p-tabMenu {
      @media screen and (max-width: 700px) {
        display: flex;
        flex-direction: column;
-       //align-items: center;
      }
+   }
+
+   ::ng-deep.p-tabview .p-tabview-panels{
+     padding: 0;
    }
 
  }

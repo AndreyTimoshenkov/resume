@@ -1,8 +1,28 @@
 :host {
   padding: 1rem;
   display: flex;
-  justify-content: center;
+  background-color: var(--highlight-bg);
   gap: 2rem;
+
+  p-card {
+    width: 100%;
+    ::ng-deep.p-card-content {
+      display: flex;
+      justify-content: flex-start;
+      gap: 3rem;
+      @media (min-width: 500px) and (max-width: 700px){
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+      @media (max-width: 499px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      }
+    }
+  }
 
   @media (min-width: 500px) and (max-width: 700px) {
     align-items: center;

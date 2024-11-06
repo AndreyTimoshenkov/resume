@@ -1,9 +1,11 @@
-import { Component, Input, WritableSignal } from '@angular/core';
-import { GetYearsAndMonthsPipe } from '../../pipes/work-experience.pipe';
-import { DataService } from '../../services/data.service';
-import { toSignal } from '@angular/core/rxjs-interop';
-import { ListItemComponent } from '../list-item/list-item.component';
-import { IBioItem } from '../../interfaces/bio.interface';
+import {Component, Input, WritableSignal} from '@angular/core';
+import {GetYearsAndMonthsPipe} from '../../pipes/work-experience.pipe';
+import {DataService} from '../../services/data.service';
+import {toSignal} from '@angular/core/rxjs-interop';
+import {ListItemComponent} from '../list-item/list-item.component';
+import {IBioItem} from '../../interfaces/bio.interface';
+import {CardModule} from 'primeng/card';
+
 
 @Component({
   selector: 'cv-bio',
@@ -11,6 +13,7 @@ import { IBioItem } from '../../interfaces/bio.interface';
   imports: [
     GetYearsAndMonthsPipe,
     ListItemComponent,
+    CardModule
   ],
   templateUrl: './bio.component.html',
   styleUrl: './bio.component.less'

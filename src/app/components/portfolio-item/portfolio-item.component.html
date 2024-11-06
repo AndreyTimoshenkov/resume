@@ -1,16 +1,17 @@
-    <div class="text">
-      <h2>
-        {{project?.name}}
-      </h2>
-      <div class="buttons">
-        <p-button label="Github" icon="pi pi-github" (click)="redirectToWebsite(project.git)"/>
-        <p-button label="Live demo" icon="pi pi-external-link" (click)="redirectToWebsite(project.link)"/>
-      </div>
-      <p class="description"> {{project?.description}}</p>
+<p-card>
+  <div class="text">
+    <h2>
+      {{project?.name}}
+    </h2>
+    <div class="buttons">
+      <p-button label="Github" icon="pi pi-github" (click)="redirectToWebsite(project.git)"/>
+      <p-button label="Live demo" icon="pi pi-external-link" (click)="redirectToWebsite(project.link)"/>
+    </div>
+    <p class="description"> {{project?.description}}</p>
 
-      <cv-stack
-        [stack]="project.stack"
-      ></cv-stack>
+    <cv-stack
+      [stack]="project.stack"
+    ></cv-stack>
     </div>
     <p-galleria
       [value]="pics"
@@ -23,3 +24,4 @@
         <img [src]="item.url" />
       </ng-template>
     </p-galleria>
+</p-card>

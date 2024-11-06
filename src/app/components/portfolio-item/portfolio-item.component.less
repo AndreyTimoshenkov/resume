@@ -1,10 +1,26 @@
 :host {
   display: flex;
-  padding: 1rem 1rem 1rem 2rem;
+  padding: 1rem;
   gap: 2rem;
   align-items: center;
+  background-color: var(--highlight-bg);
 
-  @media screen and (max-width: 700px) {
+  p-card {
+    width: 100%;
+  }
+
+  ::ng-deep.p-card-content{
+    //background-color: var(--highlight-bg);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    @media (max-width: 700px) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 700px) {
     align-items: center;
     flex-direction: column;
   }
@@ -15,7 +31,7 @@
     flex-direction: column;
     gap: 1rem;
 
-    @media screen and (max-width: 700px) {
+    @media (max-width: 700px) {
       max-width: none;
     }
 
@@ -31,8 +47,12 @@
       gap: 1rem;
       justify-content: center;
       text-wrap: nowrap;
+      @media (max-width: 900px) {
+        gap: 0.5rem;
+      }
     }
   }
+
   cv-stack {
     display: flex;
     justify-content: center
@@ -43,6 +63,6 @@ p-galleria{
   padding: 0 0.5rem;
   flex: 1 1 auto;
   img {
-    width: 100%;
+    //width: 100%;
   }
 }

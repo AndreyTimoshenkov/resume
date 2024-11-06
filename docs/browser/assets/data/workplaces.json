@@ -9,10 +9,9 @@
     "start": "2024, 10",
     "end": "2025, 1",
     "responsibilities" : [
-      "Работа в командах: 8 фронтенд разработчиков + 2 ментора, а также команда тестирования, руководитель проекта и дизайнер.",
-      "Разработка компонентов с нуля;",
-      "Доработка созданного коллегами функционала (guards, маршрутизация, HTTP interceptors).",
-      "Работа велась с mobile-first дизайном и адаптивной вёрсткой."],
+      "Работа в команде из 2 fullstack-разработчиков + ментор.",
+      "Знакомство с FastAPI и PostgreSQL"
+    ],
     "stack" : [
       {"name" : "Python", "url" : "assets/icons/stack/python.webp"},
       {"name" : "FastAPI", "url" : "assets/icons/stack/fastapi.webp"},
