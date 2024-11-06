@@ -5,14 +5,49 @@
       "link" : "https://andreytimoshenkov.github.io/512",
       "git" : "https://github.com/AndreyTimoshenkov/512",
       "pics": [
-        {"url" : "assets/portfolio/512_desk_with_bgc.png", "thumbnail" : "assets/portfolio/512_desk_tn.webp"},
-        {"url" : "assets/portfolio/512_mob_with_bgc.png", "thumbnail" : "assets/portfolio/512_mob_tn.webp"}
+        {"url" : "assets/portfolio/512_desk_with_bgc.png"},
+        {"url" : "assets/portfolio/512_mob_with_bgc.png"}
       ],
-      "description" : "A simple yet absorbing game to play. This is my attempt at copying the popular game '2048' with Angular 18, hostbinding and signals. ",
+      "description" : "A simple yet absorbing game to play. This is my attempt at copying the popular game '2048' with Angular 18, host-binding and signals. Colours are applied with the use of a directive based on the value of the cell",
       "stack" : [
         {"name" : "Angular 18", "url" : "assets/icons/stack/ng.webp"},
         {"name" : "TypeScript", "url" : "assets/icons/stack/ts.webp"},
         {"name" : "ngx-translate", "url" : "assets/icons/stack/ngx-translate.webp"},
+        {"name" : "Github", "url" : "assets/icons/stack/github.webp"}
+      ]
+    },
+    {
+      "name": "Attack logs",
+      "link" : "https://andreytimoshenkov.github.io/attack-logs",
+      "git" : "https://github.com/AndreyTimoshenkov/attack-logs",
+      "pics": [
+        {"url" : "assets/portfolio/attack-logs.webp"},
+        {"url" : "assets/portfolio/attack-logs_mob.webp"}
+      ],
+      "description" : "A test task created using RxJs, Angular 18 and Angular Material. Logs are updated based on the applied filters.",
+      "stack" : [
+        {"name" : "Angular 18", "url" : "assets/icons/stack/ng.webp"},
+        {"name" : "TypeScript", "url" : "assets/icons/stack/ts.webp"},
+        {"name" : "RxJs", "url" : "assets/icons/stack/rxjs.webp"},
+        {"name" : "Angular Material", "url" : "assets/icons/stack/material.ico"},
+        {"name" : "Github", "url" : "assets/icons/stack/github.webp"}
+      ]
+    },
+    {
+      "name": "Hacker News frontpage clone",
+      "link" : "https://andreytimoshenkov.github.io/newsClone",
+      "git" : "https://github.com/AndreyTimoshenkov/newsClone",
+      "pics": [
+        {"url" : "assets/portfolio/ynews_desk1.webp"},
+        {"url" : "assets/portfolio/ynews_desk2.webp"},
+        {"url" : "assets/portfolio/ynews_mob1.webp"},
+        {"url" : "assets/portfolio/ynews_mob2.webp"}
+      ],
+      "description" : "YCombinator Hacker News front page clone created with the use of the official API. Comments are nested within one another to form threads. Alerts created with Taiga UI kit.",
+      "stack" : [
+        {"name" : "Angular 18", "url" : "assets/icons/stack/ng.webp"},
+        {"name" : "TypeScript", "url" : "assets/icons/stack/ts.webp"},
+        {"name" : "Taiga UI", "url" : "assets/icons/stack/tui.webp"},
         {"name" : "Github", "url" : "assets/icons/stack/github.webp"}
       ]
     }
